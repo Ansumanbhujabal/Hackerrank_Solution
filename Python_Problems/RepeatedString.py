@@ -12,7 +12,7 @@ def repeatedString(s, n):
     repeat_full = n//len(s)
     remaining_s = n % len(s)
     repeat_partial = s[:remaining_s].count('a')
-    total_count = (count_a*repeat_full)+(remaining_s*remaining_s)
+    total_count = (count_a*repeat_full)+(remaining_s*repeat_partial)
 
     return total_count
 
