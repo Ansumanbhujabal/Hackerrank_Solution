@@ -12,15 +12,27 @@ import sys
 #
 
 
-def pangrams(s):
-    s_lower = s.lower()
-    chars = set(re.findall(r'[a-z]', s_lower))
-    allchar = set('abcdefghijklmnopqrstuvwxyz')
+# def pangrams(s):
+#     s_lower = s.lower()
+#     chars = set(re.findall(r'[a-z]', s_lower))
+#     allchar = set('abcdefghijklmnopqrstuvwxyz')
 
-    if chars >= allchar:
-        return "pangram"
-    else:
-        return "not pangram"
+#     if chars >= allchar:
+#         return "pangram"
+#     else:
+#         return "not pangram"
+
+
+# def pangrams(s):
+#     # Write your code here
+#     a = dict(Counter(s.lower()))
+#     print(a)
+#     if len(a) >= 27:
+#         return 'pangram'
+#     return 'not pangram'
+
+def pangrams(s):
+    return "not panagram" if len(set(list(re.sub('[^a-zA-Z]', "", s).lower()))) != 26 else "panagram"
 
 
 print(pangrams("The quick brown fox jumps over the lazy dog "))
