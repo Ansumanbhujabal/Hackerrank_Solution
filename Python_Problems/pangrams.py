@@ -12,15 +12,15 @@ import sys
 #
 
 
-# def pangrams(s):
-#     s_lower = s.lower()
-#     chars = set(re.findall(r'[a-z]', s_lower))
-#     allchar = set('abcdefghijklmnopqrstuvwxyz')
+def pangrams(s):
+    s_lower = s.lower()
+    chars = set(re.findall(r'[a-z]', s_lower))
+    allchar = set('abcdefghijklmnopqrstuvwxyz')
 
-#     if chars >= allchar:
-#         return "pangram"
-#     else:
-#         return "not pangram"
+    if chars >= allchar:
+        return "pangram"
+    else:
+        return "not pangram"
 
 
 def pangrams(s):
