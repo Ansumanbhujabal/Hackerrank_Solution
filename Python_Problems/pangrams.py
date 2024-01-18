@@ -23,14 +23,6 @@ import sys
 #         return "not pangram"
 
 
-# def pangrams(s):
-#     # Write your code here
-#     a = dict(Counter(s.lower()))
-#     print(a)
-#     if len(a) >= 27:
-#         return 'pangram'
-#     return 'not pangram'
-
 def pangrams(s):
     return "not panagram" if len(set(list(re.sub('[^a-zA-Z]', "", s).lower()))) != 26 else "panagram"
 
