@@ -6,3 +6,7 @@ The cost of every white gift is  units.
 The cost to convert a black gift into white gift or vice versa is  units.
 Determine the minimum cost of Diksha's gifts.
 """
+
+
+def taumBday(b, w, bc, wc, z):
+    return min((b*bc+w*wc), ((b+w)*wc+b*z), ((b+w)*bc+w*z))
