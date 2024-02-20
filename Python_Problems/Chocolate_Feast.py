@@ -14,3 +14,13 @@
 
 3
 """
+
+
+def chocolateFeast(n, c, m):
+    counter = papers = n // c
+    while papers >= m:
+        res = papers // m
+        counter += res
+        papers -= (res * m - res)
+
+    return counter
