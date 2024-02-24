@@ -17,7 +17,7 @@ def kaprekarNumbers(p, q):
             lis.append(num)
 
         if len(square) > 1:
-            right = int(square[-len(str(num)):])
+            right = int(square[-len(str(num)):])  # string slicing
             left = int(square[0:-len(str(num))])
 
             if right + left == num:
