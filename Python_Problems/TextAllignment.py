@@ -1,5 +1,11 @@
 # Replace all ______ with rjust, ljust or center.
 # This must be an odd number
+# rjust() method to right justify the text string.
+
+# Here, text.rjust(15, '$') right justifies the text string i.e. 'programming' to width 15 using the specified fillchar '$'.
+
+# The method returns the string '$$$$programming' whose width is 15.
+
 thickness = 5
 c = 'H'
 
