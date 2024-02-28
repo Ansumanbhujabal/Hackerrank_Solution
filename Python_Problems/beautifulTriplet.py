@@ -19,4 +19,12 @@ def beautifulTriplets(d, arr):
     return len(total)//3
 
 
+# Optimized
+
+def beautifulTriplets(d, arr):
+    total = sum(1 for i in arr if i+d in arr and i+2 *
+                d in arr)  # counts 1 for each element
+    return total
+
+
 print(beautifulTriplets(1, [2, 2, 3, 4, 5]))
