@@ -16,4 +16,5 @@ def minimumNumber(n, password):
         elif i in "!@#$%^&*()-+":
             special += 1
     ls = [upper, digits, lower, special]
+    # counts checks the number of criteria not fullfilled
     return max(ls.count(0), 6 - n)
